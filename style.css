@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -31,9 +32,21 @@
 }
 
 .header__one div{
+    font-weight: 800;
+    font-size: 1.5rem;
     border: 1px solid red;
     padding: 1rem;
     text-align: center;
+}
+
+.header__one div::after{
+    content: "1.0";
+    font-weight: 1000;
+    margin-left: 0.3125rem;
+    font-size: 0.7rem;
+    background: -webkit-linear-gradient(#2f2, #f0fe21);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header__one ul{
@@ -55,10 +68,33 @@
 
 .main__one div:first-child{
     border: 1px solid red;
-
+    margin-top: 20%;
+    margin-bottom: auto;
 }
 
-.main__one div:last-child{
+.main__one--greeting{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(#2f2, #f0fe21);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__one--getStarted{
+    width: 50%;
+    text-align: center;
+}
+
+.main__one--getStarted p{
+    padding: 0.4rem;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(#2f2, #f0fe21) 1;
+}
+
+
+.main__one div:nth-child(2){
     border: 1px solid red;
 }
 
