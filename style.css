@@ -2,4 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', 'Lato', sans-serif;
 }
+
+.body{
+}
+
+.first-page{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    height: 100vh;
+    max-width: 100%;
+    grid-auto-rows: 10% 90%;
+    background-color: blueviolet;
+
+}
+
+.header__one{
+    display: grid;
+    grid-template-columns: 12.5rem 31.25rem;
+    gap: 15rem;
+    justify-content: center;
+    background-color: aqua;
+    list-style: none;
+    
+}
+
+.header__one div{
+    border: 1px solid red;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header__one ul{
+    padding: 1rem;
+}
+
+.header__one ul li{
+    display: inline-block;
+    border: 1px solid red;
+    margin-left: 0.5rem;
+}
+
+.main__one{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    background-color: yellow;
+}
+
+.main__one div:first-child{
+    border: 1px solid red;
+
+}
+
+.main__one div:last-child{
+    border: 1px solid red;
+}
+
