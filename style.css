@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', 'Lato', sans-serif;
+    color: #fff;
 }
 
 .body{
@@ -24,7 +25,7 @@
     grid-template-columns: 12.5rem 31.25rem;
     gap: 15rem;
     justify-content: center;
-    background-color: aqua;
+    background-color: #000;
     list-style: none;
     
 }
@@ -49,7 +50,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
-    background-color: yellow;
+    background-color: #000;
 }
 
 .main__one div:first-child{
