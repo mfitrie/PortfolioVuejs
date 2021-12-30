@@ -24,7 +24,7 @@
 .header__one{
     display: grid;
     grid-template-columns: 12.5rem 31.25rem;
-    gap: 15rem;
+    gap: 25rem;
     justify-content: center;
     background-color: #000;
     list-style: none;
@@ -34,9 +34,9 @@
 .header__one div{
     font-weight: 800;
     font-size: 1.5rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 1rem;
-    text-align: center;
+    text-align:start;
 }
 
 .header__one div::after{
@@ -51,13 +51,25 @@
 
 .header__one ul{
     padding: 1rem;
+    width: 140%;
 }
 
 .header__one ul li{
     display: inline-block;
-    border: 1px solid red;
-    margin-left: 0.5rem;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    font-weight: 500;
 }
+
+
+.header__one--ContactUs{
+    padding: 0.5rem;
+    border-image: linear-gradient(#2f2, #f0fe21) 1;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
 
 .main__one{
     display: grid;
@@ -67,9 +79,11 @@
 }
 
 .main__one div:first-child{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 20%;
     margin-bottom: auto;
+    margin-left: 2rem;
+    /* border: 1px solid red; */
 }
 
 .main__one--greeting{
@@ -86,6 +100,11 @@
     text-align: center;
 }
 
+.icon{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
 .main__one--getStarted p{
     padding: 0.4rem;
     border-width: 2px;
@@ -93,8 +112,49 @@
     border-image: linear-gradient(#2f2, #f0fe21) 1;
 }
 
+  
 
-.main__one div:nth-child(2){
-    border: 1px solid red;
+.main__one--picture{
+    height: 80vh;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    /* border-left: solid;
+    border-width: 2px;
+    border-image: linear-gradient(#2f2, #f0fe21) 1; */
 }
+
+.main__one--picture::before{
+    content:'';
+    position: absolute;
+    /* background-color: #85C1E9; */
+    background: -webkit-linear-gradient(#2f2, #f0fe21);
+    width: 3px;
+    height: 20%;
+    bottom: 0;
+    left: 0; 
+}
+
+
+.main__one--picture img{
+    /* height: 80vh; */
+    height: 100%;
+    padding-left: 5.5rem;
+    clip-path: circle(37% at 57% 39%);
+    border: 1px solid red;
+
+}
+
+.main__one--picture::after{
+    content: " ";
+    display: block;
+    border-style: dashed;
+    border-width: thin;
+    border-color: #919191;
+
+    /* background-color: #919191;
+    width: 100%;
+    height: 1px; */
+}
+
 
