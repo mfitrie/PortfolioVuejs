@@ -7,3 +7,22 @@
         gap: 37rem;
     }
 }
+
+
+@media (min-width: 1344px){
+    /* .header__one{
+        background-color: #000;
+    }
+
+    .main__one{
+        background-color: #000;
+    } */
+
+    .header__one{
+        gap: 16rem;
+    }
+
+    .main__one--greeting, .main__one--getStarted p{
+        margin-left: 1rem;
+    }
+}
