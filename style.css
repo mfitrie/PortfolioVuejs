@@ -24,7 +24,7 @@
 .header__one{
     display: grid;
     grid-template-columns: 12.5rem 31.25rem;
-    gap: 25rem;
+    gap: 24rem;
     justify-content: center;
     background-color: #000;
     list-style: none;
@@ -37,6 +37,7 @@
     /* border: 1px solid red; */
     padding: 1rem;
     text-align:start;
+
 }
 
 .header__one div::after{
@@ -51,7 +52,8 @@
 
 .header__one ul{
     padding: 1rem;
-    width: 140%;
+    width: 130%;
+
 }
 
 .header__one ul li{
@@ -62,11 +64,16 @@
 }
 
 
+
 .header__one--ContactUs{
     padding: 0.5rem;
     border-image: linear-gradient(#2f2, #f0fe21) 1;
     border-width: 2px;
     border-style: solid;
+}
+
+.header__one--ContactUs span{
+    display: inline-block;
 }
 
 
@@ -156,5 +163,24 @@
     width: 100%;
     height: 1px; */
 }
+
+.section__one,
+.section__two,
+.section__three{
+    height: 100vh;
+}
+
+.section__one{
+    background-color: #2f2;
+}
+
+.section__two{
+    background-color: #f0fe21;
+}
+
+.section__three{
+    background-color: aqua;
+}
+
 
 
