@@ -8,36 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
     <link rel="stylesheet" type="text/css" href="node_modules/css.gg/icons/all.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/media_queries.css">
     <!-- <link rel="stylesheet" href="/media_queries.css"> -->
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./index.js"></script>
+
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="first-page">
-        <header class="header__one">
-            <div>Developer</div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li><a href="https://twitter.com/_mfitrie_" target="_blank"><i class="gg-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/_mfitrie_/" target="_blank"><i class="gg-instagram"></i></a></i></li>
-                <li class="header__one--ContactUs">
-                    <a href="https://www.linkedin.com/in/muhammad-fitrie-a88472199/" target="_blank" style="text-decoration: none;">
-                        <object type="image/svg+xml" data="image/Other_Icon/icons8-linkedin-circled.svg" style="margin-right: 0.5rem;">
-                        </object>
-                        <span>Contact me</span>
-                    </a>
-                </li>
-            </ul>
-        </header>
+    <header class="header__one">
+        <div>Developer</div>
+        <ul>
+            <li><a href="#firstPage" style="text-decoration: none;">Home</a></li>
+            <li><a href="#sectionOne" style="text-decoration: none;">Skills</a></li>
+            <li><a href="#sectionTwo" style="text-decoration: none;">Portfolio</a></li>
+            <li>
+                <a href="https://github.com/mfitrie" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/_mfitrie_" target="_blank" title="Twitter"><i class="gg-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100001675692452" target="_blank" title="Instagram">
+                    <i class="gg-facebook"></i>
+                </a></i>
+            </li>
+            <li class="header__one--ContactUs">
+                <a href="https://www.linkedin.com/in/muhammad-fitrie-a88472199/" target="_blank" style="text-decoration: none;" title="Linkedin">
+                    <object type="image/svg+xml" data="image/Other_Icon/icons8-linkedin-circled.svg" style="margin-right: 0.5rem;">
+                    </object>
+                    <span>Contact me</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="first-page" id="firstPage">
         <main class="main__one">
             <div>
-                <p class="main__one--greeting">Hello Guys! <br> I'm Fitrie.</p>
-                <div class="main__one--getStarted">
-                    <p><i class="gg-coffee icon"></i> GET STARTED</p> 
+                <p class="main__one--greeting main__one--animated">Hello! <br> I'm Fitrie. </p>
+                <p class="main__one--bio main__one--animated">Web and Native Android Enthusiast</p>
+                <div class="main__one--getStarted main__one--animated">
+                    <p><a href="#sectionOne" style="text-decoration: none;"><i class="gg-coffee icon"></i> GET STARTED</a></p> 
                 </div>
             </div>
             <div class="main__one--picture">
@@ -48,17 +68,76 @@
         
     </div>
 
-    <!-- about -->
-    <section class="section__one">
-
-    </section>
     <!-- skills -->
-    <section class="section__two">
+    <section class="section__one" id="sectionOne">
+        <div class="section__one--canDo">
+            <div class="canDo__title">What I Can Do</div>
+            
+            <div class="canDo__box">
+                <div class="canDo__box--one">
+                    <object type="image/svg+xml" data="./image/IconCanDo/android.svg"></object>
+                    <span>Android Development</span> 
+                    <span>Developing Android Application using Kotlin, Kotlin Coroutine, MVVM Architecture, Retrofit, ROOM Database</span> 
+                </div>
+                <div class="canDo__box--two">
+                    <object type="image/svg+xml" data="./image/IconCanDo/frontEnd.svg"></object>
+                   <span>Website Front End</span> 
+                   <span>Using HTML, CSS, JavaScript, Parceljs, Anime.js</span> 
 
+
+                </div>
+                <div class="canDo__box--three">
+                    <object type="image/svg+xml" data="./image/IconCanDo/backEnd.svg"></object>
+                    <span>Website Back End</span> 
+                    <span>Using Node.js, Express.js, Mapbox, Node Package Manager (NPM), Pug, Stripe for payment, MongoDB, MySQL</span> 
+
+
+                </div>
+                <div class="canDo__box--extra">
+                    <div class="canDo__box--four">
+                        <object type="image/svg+xml" data="./image/IconCanDo/ux.svg"></object>
+                        <span>UX Design</span> 
+                        <span>Using AdobeXD, DrawIO</span> 
+
+
+                    </div>
+                    <div class="canDo__box--five">
+                        <object type="image/svg+xml" data="./image/IconCanDo/webScrapping.svg"></object>
+                        <span>Web Scrapping</span> 
+                        <span>Using Node.js puppeteer</span> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="section__one--skills">
+            <div class="skills__title">Skills</div>
+            <div class="skills__listSkill">
+                <object type="image/svg+xml" data="./image/Logo/javascript-js-seeklogo.com.svg"></object>
+                <object type="image/svg+xml" data="./image/Logo/node-node-js-seeklogo.com.svg"></object>
+                <object type="image/svg+xml" data="./image/Logo/mongodb-logo-svgrepo-com.svg"></object>
+                <object type="image/svg+xml" data="./image/Logo/kotlin-seeklogo.com.svg"></object>
+                <object type="image/svg+xml" data="./image/Logo/mysql-logo-svgrepo-com.svg"></object>
+                <object type="image/svg+xml" data="./image/Logo/firebase-1-logo-svgrepo-com.svg"></object>
+                <object type="image/svg+xml" data="./image/Logo/git-svgrepo-com.svg"></object>
+            </div>
+        </div>
     </section>
-    <!-- portfolio -->
-    <section class="section__three">
 
+
+
+    <!-- portfolio -->
+    <section class="section__two" id="sectionTwo">
+        <div class="canDo__title">My Portfolio</div>
+
+        <div class="section__two--portfolio">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </section>
 </body>
 </html>

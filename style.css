@@ -7,6 +7,10 @@
     color: #fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .body{
 }
 
@@ -16,19 +20,21 @@
     display: grid;
     height: 100vh;
     max-width: 100%;
+    background-color: #000;
     grid-auto-rows: 10% 90%;
-    background-color: blueviolet;
-
 }
 
 .header__one{
     display: grid;
     grid-template-columns: 12.5rem 31.25rem;
-    gap: 24rem;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #000;
     list-style: none;
-    
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: 10vh; */
 }
 
 .header__one div{
@@ -37,7 +43,6 @@
     /* border: 1px solid red; */
     padding: 1rem;
     text-align:start;
-
 }
 
 .header__one div::after{
@@ -91,6 +96,10 @@
     margin-bottom: auto;
     margin-left: 2rem;
     /* border: 1px solid red; */
+
+
+    transform: translateX(-100%);
+    
 }
 
 .main__one--greeting{
@@ -102,8 +111,15 @@
     -webkit-text-fill-color: transparent;
 }
 
+.main__one--bio{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(46, 204, 113, 0.18);
+    padding: 0.7rem;
+}
+
 .main__one--getStarted{
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 
@@ -113,7 +129,7 @@
 }
 
 .main__one--getStarted p{
-    padding: 0.4rem;
+    padding: 0.6rem;
     border-width: 2px;
     border-style: solid;
     border-image: linear-gradient(#2f2, #f0fe21) 1;
@@ -164,23 +180,218 @@
     height: 1px; */
 }
 
+
+
+
+
+.canDo__title::after{
+    display: block;
+    height: 2px;
+    background: -webkit-linear-gradient(#2f2, #f0fe21);
+
+    /*Whenever we do a after pseudo-class, we have to specify its content*/
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.skills__title::after{
+    display: block;
+    height: 2px;
+    background: #e74c3c;
+
+    /*Whenever we do a after pseudo-class, we have to specify its content*/
+    content: " ";
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
 .section__one,
-.section__two,
-.section__three{
+.section__two{
     height: 100vh;
 }
 
 .section__one{
-    background-color: #2f2;
+    background-color: #000;
+    display: grid;
+    grid-template-rows: 70% 30%;
 }
+
+.section__one--canDo{
+    /* background-color: blue; */
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.canDo__title{
+    /* background-color: #2f2; */
+    /* margin-top: 2rem; */
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.canDo__box{
+    display: grid;
+    /* background-color: #f0fe21; */
+    grid-template-columns: 20rem 20rem 20rem;
+    justify-content: center;
+    gap: 0.8rem;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 3rem; */
+
+}
+
+.canDo__box object{
+    width: 2rem;
+}
+
+.canDo__box div:not(.canDo__box--extra){
+    border: 1px solid #fff;
+    height: 10rem;
+    border-radius: 10px;
+    /* box-shadow: rgb(255, 255, 255) 0px 3px 8px; */
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+
+}
+
+.canDo__box div span:nth-child(2){
+    /* background-color: red; */
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.canDo__box div span:last-child{
+    margin-top: 0.5rem;
+    text-align: justify;
+    /* background-color: #919191; */
+}
+
+.canDo__box--one,
+.canDo__box--two,
+.canDo__box--three,
+.canDo__box--four,
+.canDo__box--five
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.canDo__box--extra{
+    grid-column: span 3;
+    display: flex;
+    gap: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    justify-content: center;
+}
+
+.canDo__box--four, .canDo__box--five{
+    /* background-color: aqua; */
+    grid-column: span 1;
+    width: 20rem;
+}
+
+.section__one--skills{
+    /* background-color: yellowgreen; */
+    background-color: rgb(189, 195, 199, 2);
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.skills__title{
+    /* background-color: aquamarine; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.skills__listSkill{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+.skills__listSkill object{
+    width: 8rem;
+}
+
+
+
 
 .section__two{
-    background-color: #f0fe21;
+    background-color: #000;
 }
 
-.section__three{
-    background-color: aqua;
+.section__two--portfolio{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20rem 20rem 20rem;
+    gap: 0.8rem;
+    /* background-color: yellow; */
+    height: 80%;
+    padding: 1rem;
 }
 
+.section__two--portfolio div{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.section__two--portfolio div:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./image/portfolio/natours.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.section__two--portfolio div:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./image/portfolio/forkify.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.section__two--portfolio div:nth-child(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./image/portfolio/waifuApp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: -2rem;
+    background-repeat: no-repeat;
+}
+
+.section__two--portfolio div:nth-child(4){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./image/portfolio/ispend.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: -2rem;
+}
+
+.section__two--portfolio div:nth-child(5){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./image/portfolio/rentalX.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.section__two--portfolio div:nth-child(6){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./image/portfolio/webScrapper.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.section__two--portfolio div:hover{
+    transform: scale(1.15);
+}
 
 
