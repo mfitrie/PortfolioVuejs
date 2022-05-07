@@ -179,7 +179,6 @@
     .main__one div:first-child{
         /* border: 1px solid red; */
         margin-top: 20%;
-        margin-bottom: auto;
         margin-left: 0;
         /* border: 1px solid red; */
     
@@ -195,6 +194,7 @@
     .main__one--bio{
         font-size: 0.5rem;
         margin-left: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .main__one--getStarted{
