@@ -123,6 +123,13 @@
 
 @media (max-width: 620px) {
 
+    .loader{
+        top: 40%;
+        left: 40%;
+    }
+
+
+
     .header__one{
         height: 100vh;
         display: grid;
