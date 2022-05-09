@@ -300,14 +300,16 @@ body{
 
 
 .canDo__box{
-    display: grid;
     /* background-color: #f0fe21; */
+    /* display: grid;
     grid-template-columns: 20rem 20rem 20rem;
     justify-content: center;
-    gap: 0.8rem;
-    /* margin-top: 3rem; */
-    /* margin-bottom: 3rem; */
+    gap: 0.8rem; */
 
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .canDo__box object{
@@ -342,24 +344,10 @@ body{
 .canDo__box--four,
 .canDo__box--five
 {
+    width: 25rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-}
-
-.canDo__box--extra{
-    grid-column: span 3;
-    display: flex;
-    gap: 1rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    justify-content: center;
-}
-
-.canDo__box--four, .canDo__box--five{
-    /* background-color: aqua; */
-    grid-column: span 1;
-    width: 20rem;
 }
 
 .section__one--skills{

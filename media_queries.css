@@ -125,7 +125,7 @@
 
     .loader{
         top: 40%;
-        left: 40%;
+        left: 36%;
     }
 
 
@@ -242,7 +242,7 @@
         width: 100vw;
     }
 
-    .canDo__box{
+    /* .canDo__box{
         width: 100vw;
         grid-template-columns: 7rem 7rem 7rem;
     }
@@ -252,7 +252,6 @@
     }
 
     .canDo__box div span:nth-child(2){
-        /* background-color: red; */
         margin-top: 0.5rem;
         font-size: 0.7rem;
         font-weight: 600;
@@ -261,16 +260,34 @@
     .canDo__box div span:last-child{
         margin-top: 0.3rem;
         font-size: 0.5rem;
+    } */
+
+
+    .canDo__box--one,
+    .canDo__box--two,
+    .canDo__box--three,
+    .canDo__box--four,
+    .canDo__box--five
+    {
+        width: 6rem;
     }
 
-    /* .canDo__box--extra{
-        grid-column: span 3;
-        display: flex;
-        gap: 1rem;
-        margin-left: 7rem;
-        margin-right: 7rem;
-        justify-content: center;
-    } */
+    .canDo__box object{
+        width: 1rem;
+    }
+
+    .canDo__box div span:nth-child(2){
+        margin-top: 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .canDo__box div span:last-child{
+        margin-top: 0.3rem;
+        font-size: 0.48rem;
+    } 
+
+
 
 
     .section__one--skills{
