@@ -123,6 +123,23 @@
 
 @media (max-width: 620px) {
 
+    .menu_icon{
+        display: inline-block;
+        position: fixed;
+        top: 3%;
+        left: 93%;
+        cursor: pointer;
+    }
+
+    .back_icon{
+        display: inline-block;
+        position: fixed;
+        left: 93%;
+        top: 8%;
+        cursor: pointer;
+    }
+
+
     .loader{
         top: 40%;
         left: 36%;
@@ -135,12 +152,23 @@
         display: grid;
         grid-template-columns: 40vw;
         grid-template-rows: repeat(2, 5rem);
-        gap: 6rem;
+        gap: 3rem;
         width: 100vw;
+        
+        /* background-color: yellow; */
+        position: fixed;
+        z-index: 4;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
     }
 
+    .header__one--active{
+        transform: translateX(0);
+    }
+
+
     .header__one div{
-        margin-top: 4rem;
+        margin-top: 2rem;
         text-align: center;
         width: 50vw;
         width: 100%;

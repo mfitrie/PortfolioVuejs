@@ -7,6 +7,10 @@ const greetings = document.querySelectorAll('.main__one--animated');
 const background__loader = document.querySelector('.background__loader');
 const loader = document.querySelector('.loader');
 
+const menu_icon = document.querySelector('.menu_icon');
+const header = document.querySelector('.header__one');
+
+
 const link = ['https://github.com/mfitrie/Natours', 'https://github.com/mfitrie/forkify-web-recipe', 'https://github.com/mfitrie/WaifuApp', 'https://github.com/mfitrie/iSpend', 'https://github.com/mfitrie/Car-Rental-Syetem', 'https://github.com/mfitrie/WebScrapper'];
 
 
@@ -28,6 +32,16 @@ window.addEventListener('DOMContentLoaded', function(e){
     }, 1000);
 });
 
+
+
+menu_icon.addEventListener('click', ()=>{
+    header.classList.toggle('header__one--active');
+});
+
+
+header.addEventListener('click', ()=>{
+    header.classList.toggle('header__one--active');
+})
 
 
 portfolioBox.forEach((el, i) =>{

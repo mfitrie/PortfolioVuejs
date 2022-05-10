@@ -18,6 +18,15 @@ body{
 }
 
 
+.menu_icon{
+    display: none;
+}
+
+.back_icon{
+    display: none;
+}
+
+
 /* loading animation */
 
 .background__loader{
