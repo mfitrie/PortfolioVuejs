@@ -130,7 +130,7 @@ body{
 
 .header__one ul{
     padding: 1rem;
-    width: 130%;
+    width: 150%;
 
 }
 
@@ -208,7 +208,7 @@ body{
     border-image: linear-gradient(#2f2, #f0fe21) 1;
 }
 
-  
+
 
 .main__one--picture{
     height: 80vh;
