@@ -1,0 +1,355 @@
+/* @media  (min-width: 1920px) and (max-width: 2010.7086614px){
+
+    .header__one{
+        gap: 37rem;
+    }
+} */
+
+
+
+@media (min-width: 1344px){
+
+    .header__one{
+        gap: 16rem;
+    }
+
+    .main__one--greeting, .main__one--getStarted p{
+        margin-left: 1rem;
+    }
+}
+
+
+
+
+/* @media (max-width: 520px){
+    .header__one{
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(2, 5rem);
+    }
+
+    .header__one ul{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(7, 5rem);
+        height: 100vh;
+
+    }
+
+    .header__one ul li{
+        background-color: aqua;
+    }
+
+} */
+
+
+
+
+
+
+@media (max-width: 1536px){
+    body{
+        background-color: #000;
+    }
+}
+
+
+
+/* @media (max-width: 520px) {
+    body{
+        background-color: #000;
+    }
+
+    .header__one{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 40vw;
+        grid-template-rows: repeat(2, 5rem);
+        gap: 5rem;
+    }
+
+    .header__one ul{
+        display: grid;
+        grid-template-columns: 40vw;
+        grid-template-rows: repeat(7, 3rem);
+        height: 100vh;
+
+        justify-content: center;
+    }
+
+    .header__one div{
+        text-align: center;
+        width: 50vw;
+    }
+
+    .header__one ul li,
+    .header__one ul i{
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .header__one--ContactUs{
+        padding: 0.5rem;
+        border-image: linear-gradient(#2f2, #f0fe21) 1;
+        border-width: 2px;
+        border-style: solid;
+    }
+} */
+
+
+
+
+
+/* @media (max-width: 450px) {
+    .header__one{
+
+    }
+
+    .header__one{
+        font-size: 1.5rem;
+    }
+
+    .header__one ul{
+        grid-template-columns: 60vw;
+        gap: 1rem;
+    }
+
+
+} */
+
+
+
+@media (max-width: 620px) {
+
+    .menu_icon{
+        display: inline-block;
+        position: fixed;
+        top: 3%;
+        left: 93%;
+        cursor: pointer;
+    }
+
+    .back_icon{
+        display: inline-block;
+        position: fixed;
+        left: 93%;
+        top: 8%;
+        cursor: pointer;
+    }
+
+
+    .loader{
+        top: 40%;
+        left: 36%;
+    }
+
+
+
+    .header__one{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 40vw;
+        grid-template-rows: repeat(2, 5rem);
+        gap: 3rem;
+        width: 100vw;
+        
+        /* background-color: yellow; */
+        position: fixed;
+        z-index: 4;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+
+    .header__one--active{
+        transform: translateX(0);
+    }
+
+
+    .header__one div{
+        margin-top: 2rem;
+        text-align: center;
+        width: 50vw;
+        width: 100%;
+    }
+
+    .header__one ul{
+        display: grid;
+        grid-template-columns: 40vw;
+        grid-template-rows: repeat(7, 3rem);
+        height: 100vh;
+        gap: 1rem;
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+
+    .header__one ul li,
+    .header__one ul i{
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .header__one--ContactUs{
+        padding: 0.5rem;
+        border-image: linear-gradient(#2f2, #f0fe21) 1;
+        border-width: 2px;
+        border-style: solid;
+        font-size: 0.7rem;
+    }
+
+
+    .main__one{
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 20rem 20rem;
+        grid-template-columns: 100vw;
+        justify-content: center;
+    }
+
+    .main__one div:first-child{
+        /* border: 1px solid red; */
+        margin-top: 20%;
+        margin-left: 0;
+        /* border: 1px solid red; */
+    
+    
+        transform: translateX(-170%);
+        
+    }
+
+    .main__one--greeting{
+        font-size: 2rem;
+    }
+
+    .main__one--bio{
+        font-size: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .main__one--getStarted{
+        font-size: 0.5rem;
+        width: 60%;
+        text-align: center;
+    }
+
+    .main__one--picture{
+        grid-row-start: 1;
+        /* background-color: yellow; */
+    }
+
+    .main__one--picture img{
+        /* background-color: yellow; */
+        clip-path: circle(20% at 50% 30%);
+        /* width: 20rem; */
+        width: 100%;
+        height: 90%;
+        padding-left: 0;
+    }
+    
+    /* .main__one--picture img{
+        height: 100%;
+        padding-left: 5.5rem;
+        clip-path: circle(37% at 57% 39%);
+        border: 1px solid red;
+    
+    } */
+
+
+
+    .section__one{
+        width: 100vw;
+    }
+
+    .canDo__title{
+        width: 100vw;
+    }
+
+    /* .canDo__box{
+        width: 100vw;
+        grid-template-columns: 7rem 7rem 7rem;
+    }
+
+    .canDo__box object{
+        width: 1rem;
+    }
+
+    .canDo__box div span:nth-child(2){
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .canDo__box div span:last-child{
+        margin-top: 0.3rem;
+        font-size: 0.5rem;
+    } */
+
+
+    .canDo__box--one,
+    .canDo__box--two,
+    .canDo__box--three,
+    .canDo__box--four,
+    .canDo__box--five
+    {
+        width: 6rem;
+    }
+
+    .canDo__box object{
+        width: 1rem;
+    }
+
+    .canDo__box div span:nth-child(2){
+        margin-top: 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+
+    .canDo__box div span:last-child{
+        margin-top: 0.3rem;
+        font-size: 0.48rem;
+    } 
+
+
+
+
+    .section__one--skills{
+        width: 100vw;
+    }
+    
+
+    .skills__listSkill{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+    }
+    
+    .skills__listSkill object{
+        width: 3rem;
+    }
+
+
+    .section__two--portfolio{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 10rem 10rem;
+        gap: 0.8rem;
+        /* background-color: yellow; */
+        height: 80%;
+        padding: 1rem;
+    }
+
+}
+
+
+
+
