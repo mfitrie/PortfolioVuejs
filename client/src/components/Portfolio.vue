@@ -40,8 +40,7 @@
                 </li>
                 <li class="header__one--ContactUs">
                     <a href="https://www.linkedin.com/in/muhammad-fitrie-a88472199/" target="_blank" style="text-decoration: none;" title="Linkedin">
-                        <object type="image/svg+xml" data="image/Other_Icon/icons8-linkedin-circled.svg" style="margin-right: 0.5rem;">
-                        </object>
+                        <object type="image/svg+xml" :data="linkedinIcon" style="margin-right: 0.5rem;"></object>
                         <span>Contact me</span>
                     </a>
                 </li>
@@ -67,7 +66,7 @@
 
                 </div>
                 <div class="main__one--picture">
-                    <img src="../assets/image/aku2.jpg" alt="developer pic">
+                    <img src="@/assets/image/aku2.jpg" alt="developer pic">
                 </div>
             </main>
 
@@ -81,19 +80,19 @@
                 
                 <div class="canDo__box">
                     <div class="canDo__box--one">
-                        <object type="image/svg+xml" data="./image/IconCanDo/android.svg"></object>
+                        <object type="image/svg+xml" :data="androidIcon"></object>
                         <span>Android Development</span> 
                         <span>Developing Android Application using Kotlin, Kotlin Coroutine, MVVM Architecture, Retrofit, ROOM Database</span> 
                     </div>
                     <div class="canDo__box--two">
-                        <object type="image/svg+xml" data="./image/IconCanDo/frontEnd.svg"></object>
+                        <object type="image/svg+xml" :data="frontendIcon"></object>
                     <span>Website Front End</span> 
                     <span>Using HTML, CSS, JavaScript, Parcel.js, Anime.js</span> 
 
 
                     </div>
                     <div class="canDo__box--three">
-                        <object type="image/svg+xml" data="./image/IconCanDo/backEnd.svg"></object>
+                        <object type="image/svg+xml" :data="backendIcon"></object>
                         <span>Website Back End</span> 
                         <span>Using Node.js, Express.js, Mapbox, Node Package Manager (NPM), Pug, Stripe for payment, MongoDB, MySQL</span> 
 
@@ -101,14 +100,14 @@
                     </div>
                     
                     <div class="canDo__box--four">
-                        <object type="image/svg+xml" data="./image/IconCanDo/ux.svg"></object>
+                        <object type="image/svg+xml" :data="uxIcon"></object>
                         <span>UX Design</span> 
                         <span>Using AdobeXD, DrawIO</span> 
 
 
                     </div>
                     <div class="canDo__box--five">
-                        <object type="image/svg+xml" data="./image/IconCanDo/webScrapping.svg"></object>
+                        <object type="image/svg+xml" :data="webScrappingIcon"></object>
                         <span>Web Scrapping</span> 
                         <span>Using Node.js puppeteer</span> 
                     </div>
@@ -118,13 +117,21 @@
             <div class="section__one--skills">
                 <div class="skills__title">Skills</div>
                 <div class="skills__listSkill">
-                    <object type="image/svg+xml" data="./image/Logo/javascript-js-seeklogo.com.svg"></object>
-                    <object type="image/svg+xml" data="./image/Logo/node-node-js-seeklogo.com.svg"></object>
-                    <object type="image/svg+xml" data="./image/Logo/mongodb-logo-svgrepo-com.svg"></object>
-                    <object type="image/svg+xml" data="./image/Logo/kotlin-seeklogo.com.svg"></object>
-                    <object type="image/svg+xml" data="./image/Logo/mysql-logo-svgrepo-com.svg"></object>
-                    <object type="image/svg+xml" data="./image/Logo/firebase-1-logo-svgrepo-com.svg"></object>
-                    <object type="image/svg+xml" data="./image/Logo/git-svgrepo-com.svg"></object>
+                    <!-- <object type="image/svg+xml" data="/src/assets/image/Logo/javascript-js-seeklogo.com.svg"></object>
+                    <object type="image/svg+xml" data="/src/assets/image/Logo/node-node-js-seeklogo.com.svg"></object>
+                    <object type="image/svg+xml" data="/src/assets/image/Logo/mongodb-logo-svgrepo-com.svg"></object>
+                    <object type="image/svg+xml" data="/src/assets/image/Logo/kotlin-seeklogo.com.svg"></object>
+                    <object type="image/svg+xml" data="/src/assets/image/Logo/mysql-logo-svgrepo-com.svg"></object>
+                    <object type="image/svg+xml" data="/src/assets/image/Logo/firebase-1-logo-svgrepo-com.svg"></object>
+                    <object type="image/svg+xml" data="/src/assets/image/Logo/git-svgrepo-com.svg"></object> -->
+
+                    <object type="image/svg+xml" :data="jsIcon"></object>
+                    <object type="image/svg+xml" :data="nodejsIcon"></object>
+                    <object type="image/svg+xml" :data="mongodbIcon"></object>
+                    <object type="image/svg+xml" :data="kotlinIcon"></object>
+                    <object type="image/svg+xml" :data="mysqlIcon"></object>
+                    <object type="image/svg+xml" :data="firebaseIcon"></object>
+                    <object type="image/svg+xml" :data="gitIcon"></object>
                 </div>
             </div>
         </section>
@@ -147,13 +154,50 @@
 </template>
 
 <script>
-import index from '../assets/script/index'
+import index from '../assets/script/index';
+
+const linkedinIcon = require('@/assets/image/Other_Icon/icons8-linkedin-circled.svg')
+const androidIcon = require('@/assets/image/IconCanDo/android.svg');
+const frontendIcon = require('@/assets/image/IconCanDo/frontEnd.svg');
+const backendIcon = require('@/assets/image/IconCanDo/backEnd.svg');
+const uxIcon = require('@/assets/image/IconCanDo/ux.svg');
+const webScrappingIcon = require('@/assets/image/IconCanDo/webScrapping.svg');
+
+const jsIcon = require('@/assets/image/Logo/javascript-js-seeklogo.com.svg');
+const nodejsIcon = require('@/assets/image/Logo/node-node-js-seeklogo.com.svg');
+const mongodbIcon = require('@/assets/image/Logo/mongodb-logo-svgrepo-com.svg');
+const kotlinIcon = require('@/assets/image/Logo/kotlin-seeklogo.com.svg');
+const mysqlIcon = require('@/assets/image/Logo/mysql-logo-svgrepo-com.svg');
+const firebaseIcon = require('@/assets/image/Logo/firebase-1-logo-svgrepo-com.svg');
+const gitIcon = require('@/assets/image/Logo/git-svgrepo-com.svg');
 
 export default {
     name: "PortFolio",
+    data() {
+        return {
+            linkedinIcon,
+            androidIcon,
+            frontendIcon,
+            backendIcon,
+            uxIcon,
+            webScrappingIcon,
+            jsIcon,
+            nodejsIcon,
+            mongodbIcon,
+            kotlinIcon,
+            mysqlIcon,
+            firebaseIcon,
+            gitIcon,
+        }
+    },
     mounted() {
         index();
     },
 
 }
 </script>
+
+<style>
+@import '../assets/style.css';
+@import '../assets/media_queries.css';
+</style>
